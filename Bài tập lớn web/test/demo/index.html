@@ -1,0 +1,235 @@
+<!DOCTYPE html>  
+<html lang="vi">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="main.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <title>Khách sạn SKY HOTEL</title>  
+</head>  
+<body>  
+    <header>  
+        <div class="user-options"> 
+            <select id="language-selector">  
+                <option value="vietnamese">Tiếng Việt</option>  
+                <option value="english">English</option>  
+            </select>        
+            <a href="#">Đăng nhập</a> |  
+            <a href="#">Đăng ký</a> 
+        </div>  
+        <h1>SKY HOTEL</h1>   
+        <nav>  
+            <ul>  
+                <li><a href="#gioithieu">Giới thiệu</a></li>    
+                <li><a href="#rooms">Phòng</a></li>   
+                <li><a href="#services">Dịch vụ</a></li>   
+                <li><a href="#review">Đánh giá</a></li>  
+                <li><a href="#footer">Liên hệ</a></li>  
+            </ul>  
+        </nav> 
+        <h2 id="welcome-message">Chào mừng bạn đến với SKY HOTEL</h2>    
+        <h3 id="motto">Nơi những giấc mơ hòa quyện với sự bình yên.</h3>  
+        <div class="booking-form">  
+            <input type="text" placeholder="CHECK IN" id="checkin" onclick="this.type='date'" onblur="if(this.value==''){this.type='text'}">  
+            <input type="text" placeholder="CHECK OUT" id="checkout" onclick="this.type='date'" onblur="if(this.value==''){this.type='text'}"> 
+            <select>  
+                <option>Số khách</option>  
+                <option>1</option>  
+                <option>2</option>  
+            </select>  
+            <select>  
+                <option>Trẻ em</option>  
+                <option>0</option>  
+                <option>1</option>  
+            </select>  
+            <select>  
+                <option>Loại phòng</option>  
+                <option>1</option>  
+                <option>2</option>  
+            </select>  
+            <button>Tìm kiếm</button>  
+        </div>
+    </header>    
+    <div id = "modal"></div>
+    <section class="gioithieu sec-width" id="gioithieu">  
+        <div class="title">  
+            <h2>Giới thiệu</h2>  
+        </div>  
+        <div class="gioithieu-container">  
+            <article class="gioithieu">
+                <div class = "hotel-image">
+                    <img src = "/images/hotel.jpg" alt = "hotel image">
+                </div>  
+                <div class="gioithieu-content">  
+                    <p>Sky Hotel là một trong những khách sạn sang trọng và hiện đại nhất tại trung tâm thành phố, mang đến cho du khách trải nghiệm nghỉ dưỡng tuyệt vời. Với thiết kế tinh tế và tầm nhìn panoramico tuyệt đẹp ra toàn cảnh thành phố, Sky Hotel cung cấp nhiều loại phòng nghỉ được trang bị đầy đủ tiện nghi cao cấp. Khách sạn còn có nhà hàng phục vụ ẩm thực đa dạng, quầy bar thư giãn, cùng các dịch vụ spa và phòng tập gym hiện đại. Đặc biệt, đội ngũ nhân viên thân thiện và chuyên nghiệp luôn sẵn sàng phục vụ, đảm bảo mang đến cho khách hàng những phút giây thoải mái và ấn tượng nhất trong suốt thời gian lưu trú.</p>  
+                </div>  
+            </article>  
+        </div>  
+    </section> 
+    <section class = "rooms sec-width" id = "rooms">
+        <div class = "title">
+            <h2>Phòng</h2>
+        </div>
+        <div class = "rooms-container">
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "/images/img1.jpg" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3>Phòng Deluxe</h3>
+                    <p>Phòng Deluxe được thiết kế với các trang thiết bị hiện đại, cách bày trí sang trọng và ấn tượng cùng hướng nhìn ra hồ Giảng Võ thơ mộng, yên tĩnh tạo cho Quý khách cảm giác thư giãn và thoải mái. Hạng phòng này rất phù hợp cho các khách thương gia có nhu cầu lưu trú dài hạn hoặc khách từ các công ty lữ hành.</p>
+                    <p class = "rate">
+                        <span>500.000VND/</span> Đêm
+                    </p>
+                    <button type = "button" class = "btn">Đặt ngay</button>
+                </div>
+            </article>
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "/images/img2.jpg" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3>Phòng Premium Executive Suite</h3>
+                    <p>Phòng Premium Executive Suite bao gồm một phòng khách và phòng ngủ hướng ra Hồ. Mỗi phòng đều được thiết kế với phong cách trang nhã, tiện nghi và có khu vực tiếp khách riêng biệt.</p>
+                    <p class = "rate">
+                        <span>1.000.000VND/</span> Đêm
+                    </p>
+                    <button type = "button" class = "btn">Đặt ngay</button>
+                </div>
+            </article>
+            <article class = "room">
+                <div class = "room-image">
+                    <img src = "/images/img3.jpg" alt = "room image">
+                </div>
+                <div class = "room-text">
+                    <h3>Phòng Premium</h3>
+                    <p>Phòng Premium sở hữu hệ thống trang thiết bị tiện nghi cùng internet siêu tốc, đảm bảo nhu cầu sử dụng của Quý khách được đáp ứng kịp thời.</p>
+                    <p class = "rate">
+                        <span>2.000.000VND/</span> Đêm
+                    </p>
+                    <button type = "button" class = "btn">Đặt ngay</button>
+                </div>
+            </article>
+        </section>
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>Dịch vụ</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Ăn uống</h2>
+                        <p>Tận hưởng những trải nghiệm ẩm thực độc đáo tại nhà hàng của chúng tôi, nơi mà các đầu bếp tài hoa kết hợp hương vị truyền thống với những sáng tạo hiện đại. Menu đa dạng từ các món ăn địa phương tươi ngon đến những món quốc tế hấp dẫn, tất cả đều được chuẩn bị từ nguyên liệu tươi mới và chất lượng nhất. Với không gian sang trọng và ấm cúng, bạn sẽ có những bữa ăn đáng nhớ bên gia đình và bạn bè.</p>
+                        <div class = "service-image">
+                            <img src = "/images/eat.jpg" alt = "service image">
+                        </div>
+                        <button type = "button" class = "btn">Xem thêm</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Spa & Làm đẹp</h2>
+                        <p>Thư giãn và phục hồi tại spa của chúng tôi, nơi mang đến một thiên đường yên bình giữa nhịp sống hối hả. Đội ngũ therapist chuyên nghiệp sẽ giúp bạn giải tỏa căng thẳng qua các liệu pháp massage và chăm sóc da được thiết kế riêng biệt. Sử dụng các sản phẩm tự nhiên, chúng tôi cam kết mang đến cho bạn cảm giác thư giãn tối đa và sự phục hồi tinh thần, giúp bạn trở nên tươi mới và tràn đầy năng lượng.</p>
+                        <div class = "service-image">
+                            <img src = "/images/spa.jpg" alt = "service image">
+                        </div><button type = "button" class = "btn">Xem thêm</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Tổ chức sự kiện</h2>
+                        <p>Cho dù bạn đang lên kế hoạch cho một buổi tiệc sinh nhật hoành tráng, một đám cưới lãng mạn hay một sự kiện doanh nghiệp nghiêm túc, chúng tôi cam kết mang đến dịch vụ tổ chức sự kiện hoàn hảo. Với không gian linh hoạt và trang thiết bị hiện đại, đội ngũ chuyên viên tổ chức sự kiện của chúng tôi sẽ giúp biến ý tưởng của bạn thành hiện thực, đảm bảo rằng mỗi chi tiết đều được chăm sóc kỹ lưỡng. Hãy để chúng tôi giúp bạn tạo ra những khoảnh khắc đáng nhớ cho bất kỳ dịp nào!</p>
+                        <div class = "service-image">
+                            <img src = "/images/sukien.jpg" alt = "service image">
+                        </div>
+                        <button type = "button" class = "btn">Xem thêm</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Quầy Bar</h2>
+                        <p>Quầy bar của chúng tôi mang đến không gian sôi động và phong cách, nơi bạn có thể thưởng thức những ly cocktail độc đáo và đồ uống đa dạng. Đội ngũ bartender chuyên nghiệp sẽ phục vụ bạn những món uống tuyệt hảo, từ cocktail cổ điển đến những sáng tạo mới lạ. Đây là nơi lý tưởng để thư giãn, giao lưu và tận hưởng những buổi tối vui vẻ bên bạn bè. Hãy đến và trải nghiệm không khí tươi vui tại quầy bar của chúng tôi!</p>
+                        <div class = "service-image">
+                            <img src = "/images/bar.jpg" alt = "service image">
+                        </div>
+                        <button type = "button" class = "btn">Xem thêm</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section> 
+        <section class="review sec-width" id="review">  
+            <div class="title">  
+                <h2>Đánh giá</h2>  
+            </div>  
+            <div class="review-container">  
+                <div class="reviews">  
+                    <article class="review"> 
+                        <div class="review-rating">★★★★★</div>  
+                    <p class="review-text">  
+                        "Kỳ nghỉ tại khách sạn này thật tuyệt vời! Nhân viên rất thân thiện và chuyên nghiệp. Phòng ở sạch sẽ và được trang trí đẹp mắt. Đặc biệt, bữa sáng buffet rất phong phú và ngon miệng. Tôi chắc chắn sẽ quay lại!"  
+                    </p>  
+                    <div class="review-author">  
+                        <img src="/images/sehun.jpg" alt="Ảnh đại diện" class="author-image">  
+                        <span class="author-name">Oh Sehun</span>  
+                        <span class="author-location">Seoul, Korean</span>  
+                    </div>  
+                    </article>  
+                    <article class="review">  
+                        <div class="review-rating">★★★★</div>  
+                        <p class="review-text">  
+                            "Khách sạn khá ổn, nhưng tôi mong đợi nhiều hơn. Phòng hơi nhỏ và không được cách âm tốt, tôi có thể nghe tiếng ồn từ hành lang. Nhân viên phục vụ thân thiện nhưng cần cải thiện tốc độ phục vụ. Địa điểm tiện lợi."
+                        </p>  
+                        <div class="review-author">  
+                            <img src="/images/taylor.jpg" alt="Ảnh đại diện" class="author-image">  
+                            <span class="author-name">Taylor Swift</span>  
+                            <span class="author-location">Pennsylvania, United States</span>  
+                        </div>  
+                    </article>  
+                </div>  
+            </div>  
+        </section> 
+
+        <footer id="footer">  
+            <div class="footer-content">  
+                <div class="social-links">  
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>  
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>  
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>  
+                    <a href="https://www.tripadvisor.com" target="_blank"><i class="fab fa-tripadvisor"></i></a>  
+                </div>  
+                <p> Giảng Võ, Ba Đình, Hà Nội, Việt Nam</p>  
+                <p>Phone: 03 42 8593 1829 | Fax: 03 28 2987 3742</p>  
+                <p>sky@skyhotel.com.vn</p>  
+                <p>© Copyright Sky Hotel 2024</p>  
+            </div>  
+        </footer>  
+</body>  
+</html>
